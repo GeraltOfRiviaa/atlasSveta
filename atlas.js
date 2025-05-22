@@ -82,5 +82,5 @@ order.addEventListener('change', ()=> {
     getData(continent.value, order.value);
 });
 
-getData('europe', 0);
+getData('europe', 2);
 
