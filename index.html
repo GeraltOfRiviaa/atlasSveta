@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>Atlas zemí</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="bg-primary text-center p-3">
+        <h1 class="display-3 text-white text-center">Atlas zemí</h1>
+        <div>
+            <label for="orderBy" class="text-white">Kontinent</label>
+            <select name="continent" id="continent">
+                <option value="europe">Evropa</option>
+                <option value="asia">Asie</option>
+                <option value="africa">Afrika</option>
+                <option value="americas">Amerika</option>
+                <option value="oceania">Oceánie</option>
+                <option value="antarctic">Antarktida</option>
+            </select>
+        </div>
+        <div>
+            <label for="orderBy" class="text-white">Řazení států</label>
+            <select name="orderBy" id="orderBy">
+                <option value="2">Nejvíc obyvatel</option>
+                <option value="3">Nejmíň obyvatel</option>
+                <option value="1">Abecedně</option>
+            </select>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row" id="listCountries">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                <!--<div class="card">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/bw.png" alt="Vlajka">
+                    <div class="card-body">
+                        <h4 class="card-title">Název státu</h4>
+                        <p class="card-text">Hlavní město</p>
+                        <a href="#" class="btn btn-info card-link">Informace</a>
+                    </div>
+                </div>
+            -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center">Samuel Svoboda, IT2</p>
+    </footer>
+
+    <!-- The Modal -->
+    <div class="modal" id="windowCountry">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Informace</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body" id="modal-body-content">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="atlas.js"></script>
+</body>
+
+</html>
